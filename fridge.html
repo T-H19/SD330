@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang = “en”>
+	<head>
+		<meta charset = “UTF-8”>
+		<title>Fridge App</title>
+    <style>
+    body{color: black ; background-color:plum;}
+    div{border: solid black; padding: 2px 2px 2px 2px ; margin-top: 10px; margin-bottom: 10px; width: 33%; float: left;}
+    .fullWidth{width: 100%}
+    </style> 
+
+    </head>
+
+    <body onload = "doStartClock();">
+        <h1>Fridge App</h1>
+        
+        <div id = "div1">
+            <p id = "timePar" style = "font-size:2em; font-family: 'Courier New', Courier, monospace; text-align: center;">00:00:00</p>
+        </div>
+
+        <div id = "div2">
+            <p>Mostly Cloudy: Wear a sweater!</p>
+        </div>
+
+        <div id = "div3">
+            
+            <img class="trans" id="pic" src="https://fridgesreviews.com/wp-content/uploads/2018/03/51d1Cc2BNYUL._SL1000_-1.jpg" alt="" width = "500" height = "500"/>
+            
+        </div>
+        <p style = "clear:left;"></p>
+
+        <div id = "div4">
+            <img class="trans" id="pic1" src="" alt="" width = "450" height = "500"/>
+        </div>
+
+        <div id = "div5">
+            <img class="trans" id="pic2" src="" alt="" width = "450" height = "500"/>
+        </div>
+
+        <div id = "div6">
+            
+            <p>text</p>
+            
+        </div>
+        <p style = "clear:left;"></p>
+
+        <div id = "buttons" class = "fullWidth">
+            <input type=button onclick="button1()" id="button1" value="On">
+            <input type=button onclick="button2()" id="button2" value="Open Fridge">
+            <input type=button onclick="button3()" id="button3" value="Open Browser">
+            <input type=button onclick="button4()" id="button4" value="Open Notes">
+            <input type=button onclick="button5()" id="button5" value="40°F">
+        </div>
+    </body>
+
+    <footer>
+        <div id = "div7" style ="border: tan">
+            <hr>
+            <small>&copy; T. Hernandez-Martinez</small>
+        </div>
+    </footer> 
+
+    <script>
+
+        globalAuthor = "Tania Hernandez-Martinez";        
+
+        function onLoad(){
+            alert("Hello class.");
+            document.getElementById("div2").innerHTML= "Autoloaded text for division 2";
+            document.getElementById("div6").innerHTML= "Autoloaded text for division 6";
+        }
+
+        function button1(){
+            but1 = document.getElementById("button1");
+            if(but1.value == "On"){
+                but1.value = "Off";
+                but1 = document.getElementById("button1").style.backgroundColor = "green";
+            }
+            else{
+                but1.value = "On";
+                but1 = document.getElementById("button1").style.backgroundColor = "red";
+                but3 = document.getElementById("button3").value = "Open Browser";
+                but3 = document.getElementById("pic1").src = "";
+                but4 = document.getElementById("button4").value = "Open Notes";
+                but4 = document.getElementById("pic2").src = "";
+                document.getElementById("div2").innerHTML = "";
+
+            }
+        }
+
+        var pic = document.getElementById("pic");
+
+
+        function button2(){
+            but2 = document.getElementById("button2");
+            if(but2.value == "Open Fridge"){
+                but2.value = "Close Fridge";
+                but2 = document.getElementById("pic").src = "https://www.pngall.com/wp-content/uploads/5/Double-Door-Fridge-PNG-Free-Download.png";
+            }
+            else{
+                but2.value = "Open Fridge";
+                but2 = document.getElementById("pic").src = "https://fridgesreviews.com/wp-content/uploads/2018/03/51d1Cc2BNYUL._SL1000_-1.jpg";
+            }
+        }
+
+        function button3(){
+            but3 = document.getElementById("button3");
+            if(but3.value == "Open Browser"){
+                but3.value = "Close Browser";
+                but3 = document.getElementById("pic1").src = "https://www.usatoday.com/gcdn/-mm-/eb84384ddf2356d56d1aebf07300f653e11754ec/c=22-128-577-441/local/-/media/2015/09/01/USATODAY/USATODAY/635767064723236640-google-logo.jpg?width=555&height=313&fit=crop&format=pjpg&auto=webp";
+            }
+            else{
+                but3.value = "Open Browser";
+                but3 = document.getElementById("pic1").src = "";
+            }
+        }
+
+        function button4(){
+            but4 = document.getElementById("button4");
+            if(but4.value == "Open Notes"){
+                but4.value = "Close Notes";
+                but4 = document.getElementById("pic2").src = "https://www.papertraildesign.com/wp-content/uploads/2021/01/Notes.jpg";
+            }
+            else{
+                but4.value = "Open Notes";
+                but4 = document.getElementById("pic2").src = "";
+            }
+        }
+
+        function button5(){
+            but5 = document.getElementById("button5");
+            if(but5.value == "40°F"){
+                but5.value = "4.44°C";
+            }
+            else{
+                but5.value = "40°F";
+            }
+        }
+
+        function doStartClock(){
+            setInterval(doClockTick, 1000);
+        }
+
+        function doClockTick(){
+            var currentDate = new Date();
+            var hours = currentDate.getHours();
+            var mins = currentDate.getMinutes();
+            var secs = currentDate.getSeconds();
+            var timeString = hours+":"+mins+":"+secs;
+
+            var outputElement = document.getElementById("timePar");
+            outputElement.textContent = timeString;
+        }
+
+
+    </script>
+</html>
