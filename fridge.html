@@ -4,8 +4,9 @@
 		<meta charset = “UTF-8”>
 		<title>Fridge App</title>
     <style>
-    body{color: black ; background-color:plum;}
-    div{border: solid black; padding: 2px 2px 2px 2px ; margin-top: 10px; margin-bottom: 10px; width: 33%; float: left;}
+    body{color: black ; background-color:plum; background-image: url("https://images-na.ssl-images-amazon.com/images/I/61FjOhZFmLL._AC_SL1000_.jpg");}
+    div{border:lightcyan; padding: 2px 2px 2px 2px ; margin-top: 5px; margin-bottom: 5px; width: 40%; float: left;}
+    .important{border:solid black; background-color:lightcyan; padding: 2px 2px 2px 2px; margin:auto; width: 25%;}
     .fullWidth{width: 100%}
     </style> 
 
@@ -14,43 +15,47 @@
     <body onload = "doStartClock();">
         <h1>Fridge App</h1>
         
-        <div id = "div1">
-            <p id = "timePar" style = "font-size:2em; font-family: 'Courier New', Courier, monospace; text-align: center;">00:00:00</p>
-        </div>
-
-        <div id = "div2">
-            <p>Mostly Cloudy: Wear a sweater!</p>
-        </div>
-
-        <div id = "div3">
+        <div id = "big" class="important" >
+            <div id = "div1" style = "background-color:plum">
+                <p id = "timePar" style = "font-size:.8em; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">00:00:00</p>
+            </div>
+    
+            <div id = "div2" style = "background-color:plum">
+                <p>Mostly Cloudy: Wear a sweater!</p>
+            </div>
+    
+            <div id = "div3">
+                
+                <img class="trans" id="pic" src="https://media.istockphoto.com/vectors/supermarket-shopping-basket-with-groceries-vector-illustration-vector-id1046165456?k=6&m=1046165456&s=612x612&w=0&h=SaXX3fVohos_lhj-j4k6SvLj6eBpaEwKStybb2ze-aw=" alt="" width = "145" height = "200"/>
+                
+            </div>
+            <p style = "clear:left;"></p>
+    
+            <div id = "div4">
+                <img class="trans" id="pic1" src="" alt="" width = "145" height = "200"/>
+            </div>
+    
+            <div id = "div5">
+                <img class="trans" id="pic2" src="" alt="" width = "145" height = "200"/>
+            </div>
+    
+            <div id = "div6">
+                
+                <p></p>
+                
+            </div>
             
-            <img class="trans" id="pic" src="https://fridgesreviews.com/wp-content/uploads/2018/03/51d1Cc2BNYUL._SL1000_-1.jpg" alt="" width = "500" height = "500"/>
-            
+    
+            <div id = "buttons" class = "fullWidth">
+                <input type=button onclick="button1()" id="button1" value="On">
+                <input type=button onclick="button2()" id="button2" value="Open Fridge">
+                <input type=button onclick="button3()" id="button3" value="Open Browser">
+                <input type=button onclick="button4()" id="button4" value="Open Notes">
+                <input type=button onclick="button5()" id="button5" value="40°F">
+            </div>
         </div>
-        <p style = "clear:left;"></p>
-
-        <div id = "div4">
-            <img class="trans" id="pic1" src="" alt="" width = "450" height = "500"/>
-        </div>
-
-        <div id = "div5">
-            <img class="trans" id="pic2" src="" alt="" width = "450" height = "500"/>
-        </div>
-
-        <div id = "div6">
-            
-            <p>text</p>
-            
-        </div>
-        <p style = "clear:left;"></p>
-
-        <div id = "buttons" class = "fullWidth">
-            <input type=button onclick="button1()" id="button1" value="On">
-            <input type=button onclick="button2()" id="button2" value="Open Fridge">
-            <input type=button onclick="button3()" id="button3" value="Open Browser">
-            <input type=button onclick="button4()" id="button4" value="Open Notes">
-            <input type=button onclick="button5()" id="button5" value="40°F">
-        </div>
+        
+        
     </body>
 
     <footer>
@@ -75,10 +80,13 @@
             if(but1.value == "On"){
                 but1.value = "Off";
                 but1 = document.getElementById("button1").style.backgroundColor = "green";
+                document.getElementById("div2").innerHTML = "Mostly Cloudy: Wear a sweater!";
+                but2 = document.getElementById("pic").src = "https://media.istockphoto.com/vectors/supermarket-shopping-basket-with-groceries-vector-illustration-vector-id1046165456?k=6&m=1046165456&s=612x612&w=0&h=SaXX3fVohos_lhj-j4k6SvLj6eBpaEwKStybb2ze-aw=";
             }
             else{
                 but1.value = "On";
                 but1 = document.getElementById("button1").style.backgroundColor = "red";
+                but2 = document.getElementById("pic").src = "";
                 but3 = document.getElementById("button3").value = "Open Browser";
                 but3 = document.getElementById("pic1").src = "";
                 but4 = document.getElementById("button4").value = "Open Notes";
@@ -99,7 +107,7 @@
             }
             else{
                 but2.value = "Open Fridge";
-                but2 = document.getElementById("pic").src = "https://fridgesreviews.com/wp-content/uploads/2018/03/51d1Cc2BNYUL._SL1000_-1.jpg";
+                but2 = document.getElementById("pic").src = "https://media.istockphoto.com/vectors/supermarket-shopping-basket-with-groceries-vector-illustration-vector-id1046165456?k=6&m=1046165456&s=612x612&w=0&h=SaXX3fVohos_lhj-j4k6SvLj6eBpaEwKStybb2ze-aw=";
             }
         }
 
