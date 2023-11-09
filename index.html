@@ -4,6 +4,8 @@
     <body>
         <h1>My SD330 Files - T. Hernandez-Martinez</h1>
         <h2>Here are the files on my GitHib SD330 repository.</h2>
+
+        <ul id = 'files'></ul>
         <script>
             function githubFilelist(){
 				
@@ -20,7 +22,7 @@
                         fname = file.name;           
                         fpath = "https://T-H19.github.io/SD330/" + fname;  
                         
-                        htmlString += "<p>" + fname ;
+                        htmlString += "<p> " + fname ;
                         htmlString += "<p>" + fpath ;
                     }
                 
@@ -29,7 +31,10 @@
             
             }
         </script>
-        <footer></footer>
+        <footer>
+            <hr>
+            <small>&copy; T. Hernandez-Martinez, Nov 7 2023</small>
+        </footer>
     </body>
 </html>
  
