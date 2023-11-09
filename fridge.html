@@ -21,7 +21,7 @@
             </div>
     
             <div id = "div2" style = "background-color:plum">
-                <p>Mostly Cloudy: Wear a sweater!</p>
+                <p>55° Mostly Cloudy: Wear a sweater!</p>
             </div>
     
             <div id = "div3">
@@ -41,10 +41,13 @@
     
             <div id = "div6">
                 
-                <p></p>
+                <img src = "https://www.hypebot.com/wp-content/uploads/2020/10/spotify-1759471_1280.jpg" alt="" width = "100" height = "100"/>
                 
             </div>
             
+            <div id = "div7" style = "border:solid black; background-color: ghostwhite;">
+                <p>Add to notes: </p>
+            </div>
     
             <div id = "buttons" class = "fullWidth">
                 <input type=button onclick="button1()" id="button1" value="On">
@@ -52,6 +55,7 @@
                 <input type=button onclick="button3()" id="button3" value="Open Browser">
                 <input type=button onclick="button4()" id="button4" value="Open Notes">
                 <input type=button onclick="button5()" id="button5" value="40°F">
+                <input type=button onclick="button6()" id="button6" value="1 Minute Timer">
             </div>
         </div>
         
@@ -59,7 +63,7 @@
     </body>
 
     <footer>
-        <div id = "div7" style ="border: tan">
+        <div id = "div8" style ="border: tan">
             <hr>
             <small>&copy; T. Hernandez-Martinez</small>
         </div>
@@ -158,6 +162,20 @@
 
             var outputElement = document.getElementById("timePar");
             outputElement.textContent = timeString;
+        }
+
+        function button6(){
+            but6 = document.getElementById("button6");
+            if(but6.value == "1 Minute Timer"){
+                var sec = 30;
+                var timer = setInterval(function(){
+                document.getElementById('safeTimerDisplay').innerHTML='00:'+sec;
+                sec--;
+                if (sec < 0) {
+                clearInterval(timer);
+                }
+                }, 1000);
+                }
         }
 
 
