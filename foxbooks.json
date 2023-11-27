@@ -1,0 +1,208 @@
+{"Courses": {
+    "CMPT-120":{
+        "CourseID": "1",
+        "Title" : "Introduction to programming",
+        "Semester" : "Fall",
+        "Professor": "G. Bejarano",
+        "sections": "4",
+        "Credits": "4" 
+    },
+
+    "MATH-205":{
+        "CourseID": "2",
+        "Title" : "Discrete Mathematics",
+        "Semester" : "Spring",
+        "Professor": "M. Ndiaye",
+        "sections": "2",
+        "Credits":"4"
+    },
+
+    "CMPT-308":{
+        "CourseID": "3",
+        "Title" : "Database Managament",
+        "Semester" : "Spring",
+        "Professor": "R. Sadeghi",
+        "sections": "1",
+        "Credits": "4"
+    },
+
+    "MATH-241":{
+        "CourseID": "4",
+        "Title" : "Calculus I",
+        "Semester" : "Spring",
+        "Professor": "P. Krog",
+        "sections": "1",
+        "Credits": "4"
+    },
+
+    "CMPT-307":{
+        "CourseID": "5",
+        "Title" : "Internetworking",
+        "Semester" : "Spring",
+        "Professor": "R. Cannistra",
+        "sections": "1",
+        "Credits": "4"
+    },
+
+    "CMPT-330":{
+        "CourseID": "6",
+        "Title" : "System Design",
+        "Semester" : "Fall",
+        "Professor": "A. Tokash",
+        "sections": "1",
+        "Credits": "4"
+    },
+
+    "CMPT-422":{
+        "CourseID": "7",
+        "Title" : "Computer Org. & Architecture",
+        "Semester" : "Fall",
+        "Professor": "B. Gormanly",
+        "sections": "2",
+        "Credits": "4"
+    },
+
+    "CMPT-435":{
+        "CourseID": "8",
+        "Title" : "Algorithm Analysis and Design",
+        "Semester" : "Fall",
+        "Professor": "A. Labouseur",
+        "sections": "2",
+        "Credits": "4"
+    }
+    
+},
+
+"Books": {
+
+    [Title]:{
+        "ISBN": "978-1465482211",
+        "Title": "Beginner's Step-by-Step Coding Course: Learn Computer Programming the Easy Way",
+        "Author": "DK",
+        "Available": "81",
+        "CourseID": "1"
+    }
+
+    [Title]:{
+        "ISBN": "978-1590282755",
+        "Title": "Python Programming: An Introduction to Computer Science",
+        "Author": "John Zelle",
+        "Available": "128",
+        "CourseID": "1"
+    }
+
+    [Title]:{
+        "ISBN": "978-1284184761",
+        "Title": "Essentials of Discrete Mathematics",
+        "Author": "David J. Hunter",
+        "Available": "85",
+        "CourseID": "2"
+    }
+
+    [Title]:{
+        "ISBN": "978-0691179292",
+        "Title": "Essential Discrete Mathematics for Computer Science",
+        "Author": "Lewis, Zax",
+        "Available": "142",
+        "CourseID": "2"
+    }
+
+    [Title]:{
+        "ISBN": "978-1839214905",
+        "Title": "The MySQL Workshop: A practical guide to working with data and managing databases with MySQL",
+        "Author": "Pettit, Cosentino",
+        "Available": "137",
+        "CourseID": "3"
+    }
+
+    [Title]:{
+        "ISBN": "978-0357422083",
+        "Title": "Concepts of Database Management",
+        "Author": "Friedrichsen, Ruffolo, Monk, Starks, Pratt",
+        "Available": "87",
+        "CourseID": "3"
+    }
+
+    [Title]:{
+        "ISBN": "978-1941691243",
+        "Title": "Essential Calculus Skills Practice Workbook with Full Solutions",
+        "Author": "Chris McMullen",
+        "Available": "143",
+        "CourseID": "4"
+    }
+
+    [Title]:{
+        "ISBN": "978-0071635349",
+        "Title": "Schaum's 3,000 Solved Problems in Calculus",
+        "Author": "Elliott Mendelson",
+        "Available": "98",
+        "CourseID": "4"
+    }
+
+    [Title]:{
+        "ISBN": "978-1587145049",
+        "Title": "Computer Networking Problems and Solutions: An innovative approach to building resilient, modern networks",
+        "Author": "White, Banks",
+        "Available": "78",
+        "CourseID": "5"
+    }
+
+    [Title]:{
+        "ISBN": "978-1720034100",
+        "Title": "Networking Made Easy: Get Yourself Connected",
+        "Author": "James Bernstein",
+        "Available": "110",
+        "CourseID": "5"
+    }
+
+    [Title]:{
+        "ISBN": "978-1119547259",
+        "Title": "Interactive Design: Beyond Human-Computer Interaction",
+        "Author": "Helen Sharp, Jennifer Preece, Yvonne Rogers",
+        "Available": "156",
+        "CourseID": "6"
+    }
+
+    [Title]:{
+        "ISBN": "978-0136746911",
+        "Title": "100 Things Every Designer Needs to Know About People",
+        "Author": "Susan Weinschenk",
+        "Available": "95",
+        "CourseID": "6"
+    }
+
+    [Title]:{
+        "ISBN": " 978-0128017333",
+        "Title": "Computer Organization and Design, ARM Edition",
+        "Author": "Patterson, Hennessy",
+        "Available": "100",
+        "CourseID": "7"
+    }
+
+    [Title]:{
+        "ISBN": "978-0128119051",
+        "Title": "Computer Architecture: A Quantitative Approach",
+        "Author": "John L. Hennessy",
+        "Available": "87",
+        "CourseID": "7"
+    }
+
+    [Title]:{
+        "ISBN": "978-0262046305",
+        "Title": "Introduction to Algorithms",
+        "Author": "Cormen, Leiserson, Rivest, Stein",
+        "Available": "99",
+        "CourseID": "8"
+    }
+
+    [Title]:{
+        "ISBN": "978-3030542559",
+        "Title": "The Algorithm Design Manual",
+        "Author": "Steven S. Skiena",
+        "Available": "126",
+        "CourseID": "8"
+    }
+    
+}
+
+}
