@@ -75,127 +75,127 @@
 
 "Books": {
 
-    [Title]:{
+    "1":{
         "ISBN": "978-1465482211",
         "Title": "Beginner's Step-by-Step Coding Course: Learn Computer Programming the Easy Way",
         "Author": "DK",
         "Available": "81",
         "CourseID": "1"
-    }
+    },
 
-    [Title]:{
+    "2":{
         "ISBN": "978-1590282755",
         "Title": "Python Programming: An Introduction to Computer Science",
         "Author": "John Zelle",
         "Available": "128",
         "CourseID": "1"
-    }
+    },
 
-    [Title]:{
+    "3":{
         "ISBN": "978-1284184761",
         "Title": "Essentials of Discrete Mathematics",
         "Author": "David J. Hunter",
         "Available": "85",
         "CourseID": "2"
-    }
+    },
 
-    [Title]:{
+    "4":{
         "ISBN": "978-0691179292",
         "Title": "Essential Discrete Mathematics for Computer Science",
         "Author": "Lewis, Zax",
         "Available": "142",
         "CourseID": "2"
-    }
+    },
 
-    [Title]:{
+    "5":{
         "ISBN": "978-1839214905",
         "Title": "The MySQL Workshop: A practical guide to working with data and managing databases with MySQL",
         "Author": "Pettit, Cosentino",
         "Available": "137",
         "CourseID": "3"
-    }
+    },
 
-    [Title]:{
+    "6":{
         "ISBN": "978-0357422083",
         "Title": "Concepts of Database Management",
         "Author": "Friedrichsen, Ruffolo, Monk, Starks, Pratt",
         "Available": "87",
         "CourseID": "3"
-    }
+    },
 
-    [Title]:{
+    "7":{
         "ISBN": "978-1941691243",
         "Title": "Essential Calculus Skills Practice Workbook with Full Solutions",
         "Author": "Chris McMullen",
         "Available": "143",
         "CourseID": "4"
-    }
+    },
 
-    [Title]:{
+    "8":{
         "ISBN": "978-0071635349",
         "Title": "Schaum's 3,000 Solved Problems in Calculus",
         "Author": "Elliott Mendelson",
         "Available": "98",
         "CourseID": "4"
-    }
+    },
 
-    [Title]:{
+    "9":{
         "ISBN": "978-1587145049",
         "Title": "Computer Networking Problems and Solutions: An innovative approach to building resilient, modern networks",
         "Author": "White, Banks",
         "Available": "78",
         "CourseID": "5"
-    }
+    },
 
-    [Title]:{
+    "10":{
         "ISBN": "978-1720034100",
         "Title": "Networking Made Easy: Get Yourself Connected",
         "Author": "James Bernstein",
         "Available": "110",
         "CourseID": "5"
-    }
+    },
 
-    [Title]:{
+    "11":{
         "ISBN": "978-1119547259",
         "Title": "Interactive Design: Beyond Human-Computer Interaction",
         "Author": "Helen Sharp, Jennifer Preece, Yvonne Rogers",
         "Available": "156",
         "CourseID": "6"
-    }
+    },
 
-    [Title]:{
+    "12":{
         "ISBN": "978-0136746911",
         "Title": "100 Things Every Designer Needs to Know About People",
         "Author": "Susan Weinschenk",
         "Available": "95",
         "CourseID": "6"
-    }
+    },
 
-    [Title]:{
+    "13":{
         "ISBN": " 978-0128017333",
         "Title": "Computer Organization and Design, ARM Edition",
         "Author": "Patterson, Hennessy",
         "Available": "100",
         "CourseID": "7"
-    }
+    },
 
-    [Title]:{
+    "14":{
         "ISBN": "978-0128119051",
         "Title": "Computer Architecture: A Quantitative Approach",
         "Author": "John L. Hennessy",
         "Available": "87",
         "CourseID": "7"
-    }
+    },
 
-    [Title]:{
+    "15":{
         "ISBN": "978-0262046305",
         "Title": "Introduction to Algorithms",
         "Author": "Cormen, Leiserson, Rivest, Stein",
         "Available": "99",
         "CourseID": "8"
-    }
+    },
 
-    [Title]:{
+    "16":{
         "ISBN": "978-3030542559",
         "Title": "The Algorithm Design Manual",
         "Author": "Steven S. Skiena",
