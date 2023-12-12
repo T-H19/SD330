@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+* {padding: 0; margin: 0; box-sizing: border-box}
+body{font-family: 'Josefin Sans', sans-serif;}
+
+    .navbar{
+    display: flex;
+    background-color: red;
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.notfound-wrp{
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://ak0.picdn.net/shutterstock/videos/20344780/thumb/1.jpg");
+}
+
+.notfound-card{
+    max-width: 460px;
+    width: 100%;
+    text-align: center;
+}
+
+.notfound-404{
+    min-height:158px;
+    line-height: 153px;
+}
+
+.notfound-404 h1{
+    color: ghostwhite;
+    font-size: 220px;
+    letter-spacing: 10px;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 0px red, -2px -2px 0px #c9c9c9;
+}
+
+.notfound-404 h1 span{
+    text-shadow: 2px 2px 0px red, -2px -2px 0px lightcoral;
+}
+
+.notfound-card p{
+    color: ghostwhite;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.notfound-card a{
+    color: ghostwhite;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid ghostwhite;
+    display: inline-block;
+    padding: 10px 25px;
+    font-weight: 700;
+    transition: 0.2s linear;
+}
+
+.notfound-card a:hover{
+    color: red;
+    border-color: red;
+}
