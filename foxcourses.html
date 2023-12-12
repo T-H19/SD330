@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+        <link rel="stylesheet" href="./css/coursestyle.css">
+        <title>FoxBooks</title>
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <div class="nav-right">
+        
+                <li><a href="./foxbooks.html">Home</a></li>
+                <li><a href="./foxcourses.html">Courses</a></li>
+                <li><a href="./FoxBooks404.html">About</a></li>
+                <li><a href="./FoxBooks404.html">Login</a></li>
+                <li><a href="./FoxBooks404.html">Create Account</a></li>
+            </div>
+        </nav>
+
+        <div class="section-body">
+            <div class = "breadcrumbs"><li><a href = "foxbooks.html">Home</a> ">" <a href = "foxcourses.html">Courses</a></li>
+            </div>
+            <div class="gallery-main" style="margin-left:25%;padding:1px 16px;height:1000px;">
+                
+                <div class="Courses" id="Courses">
+                    <h2>Courses</h2>
+                    <ul id="courseList">
+                        <li>
+                            <h3><a href="books.html?CourseID=1">Introduction to programming</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=2">Discrete Mathematics</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=3">Database Managament</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=4">Calculus I</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=5">Internetworking</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=6">System Design</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=7">Computer Org. & Architecture</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+
+                        <li>
+                            <h3><a href="books.html?CourseID=8">Algorithm Analysis and Design</a></h3>
+                            <p><strong>Semester:</strong></p>
+                            <p><strong>Professor:</strong></p>
+                            <p><strong>Sections:</strong></p>
+                            <p><strong>Credits:</strong></p>
+                        </li>
+                    </ul>
+                </div>    
+                    
+            
+            
+            </div>
+                         
+        </div>
+            
+        <br>
+              
+
+        </div>
+
+        <footer>
+            <hr>
+            <small>&copy; T. Hernandez-Martinez December 10, 2023</small>
+        </footer>
+
+        <script>
+
+              // Function to load the JSON file and display the courses
+            const fetchData = async () => {
+                try {
+                    const response = await fetch('https://T-H19.github.io/SD330//foxbooks.json');
+                    const data = await response.json();
+                    const coursesList = document.getElementById('courseList');
+                    let courseHtml = '';
+
+                    data.courses.forEach(course => {
+                        coursesHtml += `<li>
+                                <h3><a href="books.html?CourseID=${Courses.CourseID}">${Courses.Title}</a></h3>
+                                <p><strong>Course ID:</strong> ${Courses.CourseID}</p>
+                                <p><strong>Semester:</strong> ${Courses.Semester}</p>
+                                <p><strong>Professor:</strong> ${Courses.Professor}</p>
+                                <p><strong>Sections:</strong> ${Courses.sections}</p>
+                                <p><strong>Credits:</strong> ${Courses.Credits}</p>
+                            
+                            </li>`;
+                    });
+
+                    coursesList.innerHTML = coursesHtml;
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            };
+
+            fetchData();
+            
+        </script>
+
+    </body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://use.fontawesome.com/be1ba39dfe.js"></script>
+        <link rel="stylesheet" href="./css/coursestyle.css">
+        <title>FoxBooks</title>
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <div class="nav-right">
+        
+                <li><a href="./foxbooks.html">Home</a></li>
+                <li><a href="./foxcourses.html">Courses</a></li>
+                <li><a href="./FoxBooks404.html">About</a></li>
+                <li><a href="./FoxBooks404.html">Login</a></li>
+                <li><a href="./FoxBooks404.html">Create Account</a></li>
+            </div>
+        </nav>
+
+        <div class="section-body">
+            <div class = "breadcrumbs"><li><a href = "foxbooks.html">Home</a> > <a href = "foxcourses.html">Courses</a> > <a href = "books.html"> Books</a></li>
+            </div>
+            <div class="gallery-main" style="margin-left:25%;padding:1px 16px;height:1000px;">
+                
+                <h2>Books For This Course</h2>
+                <div id="BooksContainer">
+                    <h2>Course ID: <strong></strong></h2>
+
+                    <div>
+
+                    
+                    <ul id="bookList">
+                        <li>
+                            <h3> </h3>
+                            <p><strong>Author:</strong></p>
+                            <p><strong>ISBN:</strong></p>
+                            <p><strong>Available:</strong></p>
+                            <p><strong>Course ID:</strong></p>
+                        </li>
+                        <li>
+                            <h3> </h3>
+                            <p><strong>Author:</strong></p>
+                            <p><strong>ISBN:</strong></p>
+                            <p><strong>Available:</strong></p>
+                            <p><strong>Course ID:</strong></p>
+                        </li>
+                    </ul>
+                </div>
+                </div>    
+                    
+            
+            
+            </div>
+                         
+        </div>
+            
+        <br>
+              
+
+        </div>
+
+        <footer>
+            <hr>
+            <small>&copy; T. Hernandez-Martinez December 10, 2023</small>
+        </footer>
+
+        <script>
+
+              // Function to load the JSON file and display the courses
+            
+            const fetchData = async () => {
+                try {
+                    const response = await fetch('https://T-H19.github.io/SD330//foxbooks.json');
+                    const data = await response.json();
+
+                    // Retrieving courseID from the URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const courseID = urlParams.get('CourseID');
+
+                    const booksContainer = document.getElementById('BooksContainer');
+                    let htmlString = `<h2>Course ID: <strong>${courseID}</strong></h2>`;
+
+                    // Filter books based on the selected courseID
+                    const filteredBooks = data.Books.filter(Book => Books.CourseID === CourseID);
+
+                    filteredBooks.forEach(Book => {
+                        htmlString += `<div>
+                                <h3>${Books.Title}</h3>
+                                <p><strong>Author:</strong> ${book.Author}</p>
+                                <p><strong>ISBN:</strong> ${Books.ISBN}</p>
+                                <p><strong>Available:</strong> ${Books.Available}</p>
+                                <p><strong>Course ID:</strong> ${Books.CourseID}</p>
+            
+                            </div>`;
+                    });
+
+                    booksContainer.innerHTML = htmlString;
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            };
+
+            fetchData();
+    
+            
+        </script>
+
+    </body>
+
+</html>
